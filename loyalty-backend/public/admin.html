@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liquor Admin Panel</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    input, button { margin: 5px; padding: 5px; }
+  </style>
+</head>
+<body>
+
+<h2>Admin – Manage Alcohol Items</h2>
+
+<input id="name" placeholder="Alcohol Name" />
+<input id="price" placeholder="Price (₹)" />
+<button onclick="addAlcohol()">Add Item</button>
+
+<h3>Alcohol List</h3>
+<ul id="list"></ul>
+
+<script>
+async function loadItems() {
+  const res = await fetch("/api/alcohols");
+  const data = await res.json();
+  document.getElementById("list").innerHTML =
+    data.map(i => `<li>${i.name} - ₹${i.price}</li>`).join("");
+}
+
+async function addAlcohol() {
+  const name = document.getElementById("name").value;
+  const price = document.getElementById("price").value;
+
+  await fetch("/api/alcohols", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, price })
+  });
+
+  loadItems();
+}
+
+loadItems();
+</script>
+
+</body>
+</html>

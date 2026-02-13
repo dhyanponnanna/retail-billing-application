@@ -1,0 +1,29 @@
+[
+  { "id": 1, "name": "Kingfisher Beer", "price": 180 },
+  { "id": 2, "name": "Royal Stag", "price": 650 },
+
+  { "id": 3, "name": "Budweiser Beer", "price": 200 },
+  { "id": 4, "name": "Tuborg Strong", "price": 190 },
+  { "id": 5, "name": "Carlsberg Beer", "price": 210 },
+  { "id": 6, "name": "Heineken Beer", "price": 250 },
+  { "id": 7, "name": "Bira 91 White", "price": 220 },
+
+  { "id": 8, "name": "Blenders Pride", "price": 900 },
+  { "id": 9, "name": "Signature Whisky", "price": 750 },
+  { "id": 10, "name": "Antiquity Blue", "price": 820 },
+  { "id": 11, "name": "McDowell's No.1", "price": 700 },
+  { "id": 12, "name": "Imperial Blue", "price": 680 },
+
+  { "id": 13, "name": "Old Monk Rum", "price": 620 },
+  { "id": 14, "name": "Bacardi White Rum", "price": 950 },
+  { "id": 15, "name": "Captain Morgan", "price": 980 },
+
+  { "id": 16, "name": "Smirnoff Vodka", "price": 1100 },
+  { "id": 17, "name": "Absolut Vodka", "price": 1300 },
+  { "id": 18, "name": "Magic Moments Vodka", "price": 850 },
+
+  { "id": 19, "name": "Officer's Choice", "price": 600 },
+  { "id": 20, "name": "Teachers Highland Cream", "price": 1600 },
+  { "id": 21, "name": "Black Dog Scotch", "price": 1800 },
+  { "id": 22, "name": "Chivas Regal 12", "price": 3200 }
+]
